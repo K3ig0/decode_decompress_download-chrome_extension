@@ -1,0 +1,20 @@
+{
+  "name": "DDD (Snappy -> SVG)",
+  "description": "Decode base64, Decompress Snappy & Download SVG",
+  "action": {},
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "permissions": [
+    "scripting",
+    "downloads"
+  ],
+  "host_permissions": ["file:///*"],
+  "background": {
+    "service_worker": "background-wrapper.js"
+  },
+  "icons": {
+    "16": "/logo/logo.png",
+    "48": "/logo/logo.png",
+    "128": "/logo/logo.png"
+  }
+}
