@@ -14,6 +14,6 @@ Decode base64, Decompress Snappy & Download SVG
 	<img src="./showcase/showcase.jpg">
 </div>
 
-Future features:
+> Future features:
 - Support zlib compression type
 - Customizable extension (not only SVG) for downloaded files
