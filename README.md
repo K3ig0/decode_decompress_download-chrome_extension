@@ -13,12 +13,9 @@ Decode base64, Decompress Snappy & Download SVG
 
 2) Open a file compressed with Chrome. The file must be compressed with Snappy and encoded with Base64.
 3) Click the extension icon to download the original file uncompressed.
-
-> Showcase:
 <div align="center">
 	<img src="./showcase/showcase.jpg">
 </div>
-
 
 > Future features:
 - Support zlib compression type
