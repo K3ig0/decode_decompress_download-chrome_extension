@@ -3,10 +3,11 @@
   "description": "Decode base64, Decompress Snappy & Download SVG",
   "action": {},
   "manifest_version": 3,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "permissions": [
     "scripting",
-    "downloads"
+    "downloads",
+    "notifications"
   ],
   "host_permissions": ["file:///*"],
   "background": {
