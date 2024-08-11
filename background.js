@@ -25,7 +25,6 @@ chrome.action.onClicked.addListener(async function(tab){
 });
 
 function decodeDecompressAndDownload(tabId) {
-  console.log("test");
   const binaryStr = atob(document.body.innerText);
   const len = binaryStr.length;
   let bytes = new Uint8Array(len);
