@@ -25,6 +25,7 @@ chrome.action.onClicked.addListener(async function(tab){
 });
 
 function decodeDecompressAndDownload(tabId) {
+  console.log("test");
   const binaryStr = atob(document.body.innerText);
   const len = binaryStr.length;
   let bytes = new Uint8Array(len);
@@ -33,7 +34,7 @@ function decodeDecompressAndDownload(tabId) {
     bytes[i] = binaryStr.charCodeAt(i);
   }
   try { // snappy
-    str = btoa(new TextDecoder("utf-8").decode(window.SnappyJS.uncompress(bytes)));
+    str = btoa(unescape(encodeURIComponent(new TextDecoder("utf-8").decode(window.SnappyJS.uncompress(bytes)))));
   } catch (e) { // zlib
     str = btoa(unescape(encodeURIComponent(window.pako.inflateRaw(Uint8Array.from(binaryStr, c => c.charCodeAt(0)), {to: 'string'}))));
   }
